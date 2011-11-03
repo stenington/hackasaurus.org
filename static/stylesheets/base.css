@@ -125,9 +125,18 @@ header a#mozilla {
   padding-bottom: 40px;
 }
 
-#content h1, #content h2 {
+.wf-loading #content h1, 
+.wf-loading #content h2 {
+  visibility: hidden;
+}
+
+.wf-active #content h1, 
+.wf-active #content h2,
+.wf-inactive #content h1, 
+.wf-inactive #content h2 {
   font-weight: normal;
   font-family: 'TrashHandRegular';
+  visibility: visible;
 }
 
 /* The header above content that appears on many pages. */
@@ -191,11 +200,25 @@ header a#mozilla {
  * Based on https://github.com/rossbruniges/splash.mozilla-ignite.org/
  * (as of commit 3edb1d599296195f223ca8127972ecd9fbc39899) */
 
-footer h1, footer h2 {
+.wf-loading footer h1, 
+.wf-loading footer h2 {
+  visibility: hidden;
+}
+
+.wf-active footer h1, 
+.wf-active footer h2,
+.wf-inactive footer h1, 
+.wf-inactive footer h2 {
   font-family: "MetaWebPro-Black";
   font-weight: normal;
   text-transform: uppercase;
   font-size: 20px;
+  visibility: visible;
+}
+
+.wf-active footer h1,
+.wf-active footer h2 {
+  visibility: visible;
 }
 
 .external {

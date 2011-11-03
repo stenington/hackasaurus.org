@@ -58,9 +58,15 @@ a#bookmarklet.loading {
 
 /* Main page content */
 
-ol {
+.wf-loading ol {
+  visibility: hidden;
+}
+
+.wf-active ol,
+.wf-inactive ol {
   font-family: 'TrashHandRegular';
   font-size: 24px;
+  visibility: visible;
 }
 
 ol p {

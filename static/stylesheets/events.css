@@ -53,8 +53,16 @@ li.vevent h3, li.vevent strong {
   font-weight: normal;
 }
 
-div.header-row {
+.wf-loading div.header-row div {
+  visibility: hidden;
+}
+
+.wf-active div.header-row div,
+.wf-inactive div.header-row div {
   font-family: "TrashHandRegular";
+}
+
+div.header-row {
   color: gray;
   padding-bottom: 4px;
   border-bottom: 1px dashed gray;

@@ -25,11 +25,17 @@
   margin-bottom: 36px;
 }
 
-.tip strong {
+.wf-loading .tip strong {
+  visibility: hidden;
+}
+
+.wf-active .tip strong,
+.wf-inactive .tip strong {
   font-style: normal;
   font-weight: normal;
   font-family: 'TrashHandRegular';
   font-size: 22px;
+  visibility: visible;
 }
 
 .tip ul {

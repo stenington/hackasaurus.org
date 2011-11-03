@@ -44,8 +44,14 @@
   margin-bottom: 22px;
 }
 
-.bio strong {
+.wf-loading .bio strong {
+  visibility: hidden;
+}
+
+.wf-active .bio strong,
+.wf-inactive .bio strong {
   font-weight: normal;
   font-family: 'TrashHandRegular';
   font-size: 22px; 
+  visibility: visible;
 }
